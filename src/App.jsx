@@ -14,7 +14,7 @@ import Checkout from './pages/Checkout';
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="app">
           <Navbar />
           <main className="main-content">
